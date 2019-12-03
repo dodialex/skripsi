@@ -20,19 +20,23 @@
 
 
   <style type="text/css">
-    body {
+    /* body {
       background-color: #00b4c4;
-    }
+    } */
 
     .navbar {
       background-color: #00b4c4;
+    }
+
+    .bg-user {
+      background-color: #ff7373;
     }
   </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <img src="https://freeiconshop.com/wp-content/uploads/edd/gift-flat.png" style="height: 150px;" alt="...">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,15 +46,18 @@
           <h3>SISTEM INFORMASI KEPENDUDUKAN</h3>
           <h3>RUMAH SUSUN KLENDER</h3>
           <br/>
+        <div class="bg-user">
           <h3>Kelurahan Malaka Jaya, Kecamatan Duren Sawit</h3>
           <h3>RT 004, RW 02, Klender, Pondok Kopi, Jakarta Timur</h3>
         </div>
 
+        </div>
       </ul>
       <!-- Nav Item - User Information -->
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile" style="height: 150px;" src="<?= base_url('aset/img/profil/') . $user['image'];  ?>">
+                <br/>
                 <span class="text-dark d-none d-lg-inline"><?= $user['nama']; ?></span>
-                <img class="img-profile rounded-circle fa-fw" src="<?= base_url('aset/img/profil/') . $user['image'];  ?>">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -89,20 +96,50 @@
   </nav>
 
 <!-- batas -->
-  <ul class="nav nav-pills nav-fill">
+  <ul class="nav nav-pills nav-fill" style="background-color: #e3f2fd;">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link active">Beranda</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Much longer nav link</a>
+    <a class="nav-link" href="#">Berita</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Info Rumah</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="nav-link" href="#">Layanan Masyarakat</a>
   </li>
-</ul>
+  </ul>
+    <br/>
+    <div class="float-left">
+      <button type="button" style="height:150px; width:550px;" >
+        <h5>Sejarah</h5>
+        <h5>Rumah Susun</h5>
+      </button>
+    </div>
+    <div class="float-right">
+      <button type="button"  style="height:150px; width:550px;" >
+        <h5>Sejarah</h5>
+        <h5>Rumah Susun</h5>
+      </button>
+    </div>
+    <div style="margin-up:10px;" >
+      <button class="mx-auto d-block" type="button"  style="height:150px; width:550px; margin-up:10px;" >
+        <h5>Sejarah</h5>
+        <h5>Rumah Susun</h5>
+      </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
